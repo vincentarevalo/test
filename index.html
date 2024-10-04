@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dynamic Image Quiz Game</title>
+</head>
+<body>
+    <h1>Dynamic Image Quiz Game</h1>
+    <div id="score">Score: 0</div>
+    <div id="questionsContainer" class="grid-container">
+        <div class="grid-column" id="easyColumn">
+            <h2>Easy</h2>
+        </div>
+        <div class="grid-column" id="mediumColumn">
+            <h2>Medium</h2>
+        </div>
+        <div class="grid-column" id="hardColumn">
+            <h2>Hard</h2>
+        </div>
+    </div>
+    
+    <input type="file" id="imageInput" accept="image/*">
+    <input type="text" id="answerInput" placeholder="Correct Answer">
+    <select id="difficultyInput">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+    <button onclick="addQuestion()">Add Question</button>
+    
+    <button onclick="resetQuiz()">Reset Quiz</button>
+    <script src="script.js"></script>
+</body>
+</html>
